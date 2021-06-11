@@ -16,6 +16,7 @@
         "views/account_payment_view.xml",
         "views/account_view.xml",
         "views/account_journal_dashboard_view.xml",
+        "views/menu_item_view.xml",
         "wizard/merge_statement_view.xml",
     ],
     "images": ["static/description/main_screenshot.png"],
