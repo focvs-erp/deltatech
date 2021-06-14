@@ -4,8 +4,8 @@
 		    <field name="name">Cadastro Bancario</field>
 			<field name="res_model">account.bank.statement</field>
 			<field name="type">ir.actions.act_window</field>
-			<field name="view_id" ref="	account.view_bank_statement_form"/>
-         </record>   
+			<field name="view_id" ref="account.view_bank_statement_tree"/>
+         </record>
             
      	<menuitem id="cadastro_bancario_menu" name="Cadastro Bancario" 
 			 parent="account.menu_finance_entries_actions"                 
