@@ -31,7 +31,7 @@
             
      	<menuitem id="cadastro_bancario_menu" name="Cadastro Bancario" 
 			 parent="account.menu_finance_configuration"                 
-			 action="cadastro_bancario_action_window"/> 
+			 action="account.view_account_payment_form"/> 
 
 
 <!--        <record id="view_account_payment_invoice_form" model="ir.ui.view">-->
