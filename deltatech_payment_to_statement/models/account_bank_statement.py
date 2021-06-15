@@ -3,7 +3,7 @@
 
 
 from odoo import api, fields, models
-
+from odoo.exceptions import UserError, ValidationError, Warning
 
 class AccountBankStatement(models.Model):
     _inherit = "account.bank.statement"
@@ -11,6 +11,7 @@ class AccountBankStatement(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
+            raise ValidationError("ENTRO")
             if "name" not in vals or vals["name"] in ["/", "", False]:
                 journal = self.env["account.journal"].browse(vals["journal_id"])
                 if journal.statement_sequence_id:
