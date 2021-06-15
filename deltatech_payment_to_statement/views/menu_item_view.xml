@@ -4,7 +4,7 @@
 		    <field name="name">Cadastro Bancario</field>
 			<field name="res_model">account.bank.statement</field>
 			<field name="type">ir.actions.act_window</field>
-			<field name="view_id" ref="account_accountant.view_bank_statement_form"/>
+			<field name="view_id" ref="account.view_bank_statement_form"/>
          </record>
             
      	<menuitem id="cadastro_bancario_menu" name="Cadastro Bancario" 
