@@ -7,7 +7,7 @@
 			<field name="view_mode">tree</field>
 			<field name="view_id" ref="account.view_bank_statement_tree"/>
          </record>
-            
+             
      	<menuitem id="cadastro_bancario_menu" name="Cadastro Bancário"  
 			 parent="account.menu_finance_entries_actions"                 
 			 action="cadastro_bancario_action_window"/> 
