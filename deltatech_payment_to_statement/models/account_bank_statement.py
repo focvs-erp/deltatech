@@ -7,6 +7,8 @@ from odoo import api, fields, models
 class AccountBankStatement(models.Model):
     _inherit = "account.bank.statement"
 
+    journal_id = fields.Many2one("account.journal", string="Journal")
+
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
