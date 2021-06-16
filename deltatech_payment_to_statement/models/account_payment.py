@@ -9,7 +9,7 @@ class AccountPayment(models.Model):
     _inherit = "account.payment"
 
     statement_id = fields.Many2one(
-        "account.bank.statement", string="Statement", domain="[('journal_id','=',journal_id)]"
+        "account.bank.statement", string="Statement"
     )
 
     statement_line_id = fields.Many2one(
