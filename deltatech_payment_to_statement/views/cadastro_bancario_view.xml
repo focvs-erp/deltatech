@@ -11,6 +11,23 @@
 			</field>
 		</record>
 
+		<record id="ax4b_conta_bancaria_tree" model="ir.ui.view">
+			<field name="name">Cadastro Bancário</field>
+			<field name="model">account.bank.statement</field>
+			<field name="inherit_id" ref="account.view_bank_statement_tree"/>
+			<field name="arch" type="xml">
+				<field name="name"/>
+				<field name="date"/>
+				<field name="journal_id"/>
+				<field name="company_id" groups="base.group_multi_company"/>
+				<field name="balance_start"/>
+				<field name="balance_end_real"/>
+				<field name="balance_end" invisible="1"/>
+				<field name="currency_id" invisible="1"/>
+				<field name="state"/>
+				<field name="is_difference_zero" invisible="1"/>
+			</field>
+		</record>
 
         <record id="cadastro_bancario_action_window" model="ir.actions.act_window" >
 		    <field name="name">Cadastro Bancário</field>
