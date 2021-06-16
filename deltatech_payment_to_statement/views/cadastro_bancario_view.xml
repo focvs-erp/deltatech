@@ -37,7 +37,7 @@
          </record>
              
      	<menuitem id="cadastro_bancario_menu" name="Cadastro Bancário"    
-			 parent="account.menu_finance_entries_actions"                 
+			 parent="account.menu_finance_configuration"                 
 			 action="cadastro_bancario_action_window"/> 
     </data>
 </odoo>
