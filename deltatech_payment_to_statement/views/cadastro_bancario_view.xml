@@ -1,7 +1,7 @@
 <odoo>
     <data>
 		<record id="ax4b_conta_bancaria_form" model="ir.ui.view">
-			<field name="name">Cadastro Bancário</field>
+			<field name="name">Bank Registration</field>
 			<field name="model">account.bank.statement</field>
 			<field name="inherit_id" ref="account.view_bank_statement_form"/>
 			<field name="arch" type="xml">
@@ -30,13 +30,13 @@
 		</record> -->
 
         <record id="cadastro_bancario_action_window" model="ir.actions.act_window" >
-		    <field name="name">Cadastro Bancário</field>
+		    <field name="name">Bank Registration</field>
 			<field name="res_model">account.bank.statement</field>
 			<field name="type">ir.actions.act_window</field>
 			<field name="view_id" ref="account.view_bank_statement_tree"/> 
          </record>
              
-     	<menuitem id="cadastro_bancario_menu" name="Cadastro Bancário"    
+     	<menuitem id="cadastro_bancario_menu" name="Bank Registration"    
 			 parent="account.menu_finance_configuration"                 
 			 action="cadastro_bancario_action_window"/> 
     </data>
